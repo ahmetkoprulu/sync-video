@@ -8,7 +8,10 @@ const PlayList = () => (
   <div className='playlist h-100'>
     <span className='playlist-header'>
       <strong className='playlist-header'>Play List</strong> 
-      <a href='#'> Add Video</a>
+      <span className='icons'>
+        <a href='#'><i class="fas fa-play"></i></a>
+        <a href='#'><i class="fas fa-plus"></i></a>
+      </span>
     </span>
     <div className='playlist-container h-100'>
       <PlayListItem/>

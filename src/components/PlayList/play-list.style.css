@@ -15,6 +15,10 @@
 .playlist-header a {
   text-decoration: underline;
   color: black;
+  margin: auto 5px 0px;
+}
+
+.playlist .icons {
   margin: auto 0px;
 }
 
