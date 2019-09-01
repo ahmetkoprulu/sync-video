@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import Header from './components/Header/header.component';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import PlayList from './components/PlayList/play-list.component';
+import ChatPanel from './components/ChatPanel/chat-panel.component.jsx'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className='container'>
+        <div className='row h-100'>
+          <div className='col-md-9'>
+            <div className='container bg-info h-100'>
+            </div>
+          </div>
+          <div className='col-md-3 h-100'>
+            <PlayList />
+            <div>sas</div>
+          </div>
+        </div>
+        <ChatPanel />
+      </div>
     </div>
   );
 }

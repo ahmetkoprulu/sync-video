@@ -1,0 +1,23 @@
+.playlist {
+  text-align: left;
+}
+
+.playlist-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.playlist-header strong {
+  font-size: 25px;
+  margin: auto 0px;
+}
+
+.playlist-header a {
+  text-decoration: underline;
+  color: black;
+  margin: auto 0px;
+}
+
+.playlist-container {
+  background-color: lightgrey;
+}
