@@ -1,4 +1,18 @@
 .playlistitem {
-  padding: 10px;
-  border-bottom: 1px darkolivegreen solid;
+  border-bottom: 1px solid;
+}
+
+.playlistitem .playlistitem-info {
+  width: 100%;
+  padding: 5px;
+}
+
+.playlistitem .playlistitem-dragable {
+  border-left: 1px solid;
+  width: auto;
+  padding: auto 2px;
+}
+
+.playlistitem .playlistitem-icon {
+  margin: 21px 5px;
 }

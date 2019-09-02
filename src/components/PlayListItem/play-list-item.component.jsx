@@ -2,13 +2,13 @@ import React from 'react'
 
 import './play-list-item.style.css'
 
-const PlayListItem = () => (
+const PlayListItem = ( { title, link} ) => (
   <div className='playlistitem'>
     <div className='playlistitem-title'>
-      Title
+      { title.substring(0,27) }...
     </div>
     <div className='playlistitem-link'>
-      Link
+      <strong>Link:</strong> { link }
     </div>
   </div>
 )

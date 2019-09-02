@@ -23,5 +23,6 @@
 }
 
 .playlist-container {
-  background-color: lightgrey;
+  overflow: auto;
+  height: 460px;
 }

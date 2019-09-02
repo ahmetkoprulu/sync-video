@@ -1,8 +1,22 @@
 import { PlayListActionTypes } from './play-list.type.js'
+import { addVideo } from './play-list.utils'
 
 const INITIAL_STATE = {
-  list: [],
-  playing: ''
+  videos: [
+    {
+      title: 'Damian Marley - Road to Zion ft. Nas',
+      link: 'S9xnYasQB2w'
+    },
+    {
+      title: 'Damian Marley - Road to Zion ft. Nas',
+      link: 'S9xnYasQB2w'
+    },
+    {
+      title: 'Damian Marley - Road to Zion ft. Nas',
+      link: 'S9xnYasQB2w'
+    }
+  ],
+  playing: 0
 }
 
 const playListReducer = (currentState=INITIAL_STATE, action) => {
@@ -10,7 +24,13 @@ const playListReducer = (currentState=INITIAL_STATE, action) => {
     case PlayListActionTypes.ADD_VIDEO:
       return {
         ...currentState,
-        list: currentState.push(action.payload)
+        videos: addVideo(currentState, action.payload)
+      }
+
+    case PlayListActionTypes.SET_PLAYING:
+      return {
+        ...currentState,
+        playing: action.payload
       }
 
     default:
