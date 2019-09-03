@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { createStructuredSelector } from "reselect";
 import { selectPlayingIndex, selectVideos } from '../../redux/PlayList/play-list.selector'
-import { addVideo } from '../../redux/PlayList/play-list.actions'
+import { addVideo, startFromBeginning, setPlaying } from '../../redux/PlayList/play-list.actions'
 import PlayList from './play-list.component.jsx'
 
 const mapStateToProps = createStructuredSelector({
@@ -11,7 +11,8 @@ const mapStateToProps = createStructuredSelector({
 })
 
 const mapDispatchToProps = dispatch => ({
-  addVideo: user => dispatch(addVideo(user))
+  addVideo: video => dispatch(addVideo(video)),
+  startFromBeginning: () => dispatch(startFromBeginning())
 })
 
 const PlayListContainer = compose(
