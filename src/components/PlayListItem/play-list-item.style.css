@@ -1,5 +1,6 @@
 .playlistitem {
   border-bottom: 1px solid;
+  display: flex;
 }
 
 .playlistitem .playlistitem-info {
@@ -7,10 +8,10 @@
   padding: 5px;
 }
 
-.playlistitem .playlistitem-dragable {
-  border-left: 1px solid;
-  width: auto;
-  padding: auto 2px;
+.dragIcon {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-right: 10px;
 }
 
 .playlistitem .playlistitem-icon {

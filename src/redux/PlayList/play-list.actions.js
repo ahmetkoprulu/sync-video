@@ -27,3 +27,8 @@ export const deleteVideo = index => ({
   type: PlayListActionTypes.DELETE_VIDEO,
   payload: index
 })
+
+export const videoDragOver = (index, selectedVideo) => ({
+  type: PlayListActionTypes.VIDEO_DRAG_OVER,
+  payload: { index, selectedVideo }
+})

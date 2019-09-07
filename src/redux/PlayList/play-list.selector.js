@@ -11,3 +11,8 @@ export const selectPlayingIndex = createSelector(
   [selectPlayList],
   playList => playList.playing
 )
+
+export const selectVideoByIndex = index => createSelector(
+  [selectVideos],
+  videos => videos[index]
+)
