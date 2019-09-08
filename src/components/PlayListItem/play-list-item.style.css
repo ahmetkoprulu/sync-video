@@ -1,5 +1,5 @@
 .playlistitem {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #ddd;
   display: flex;
 }
 

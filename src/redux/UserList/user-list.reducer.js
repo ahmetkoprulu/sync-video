@@ -1,8 +1,8 @@
 import { UserListActionTypes } from './user-list.type.js'
 
 const INITIAL_STATE = {
-  users: [],
-  currentUser: ''
+  users: ['desroal', 'manusbaba'],
+  currentUser: 'manusbaba'
 }
 
 const userListReducer = (currentState=INITIAL_STATE, action) => {
@@ -10,11 +10,11 @@ const userListReducer = (currentState=INITIAL_STATE, action) => {
     case UserListActionTypes.JOIN_ROOM:
       return {
         ...currentState,
-        users: currentState.users.push(action.payload)
+        users: [...currentState.users, action.payload],
       }
     
     case UserListActionTypes.SET_CURRENT_USER:
-      return {
+      return { 
         ...currentState,
         currentUser: action.payload
       }
