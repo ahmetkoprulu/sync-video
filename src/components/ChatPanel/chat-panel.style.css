@@ -44,8 +44,12 @@
   top: 0;
 }
 
-.icon {
+.info-btn .icon {
   color: white;
+}
+
+.info-btn :hover {
+  color: silver
 }
 /**************** HEADER ****************/
 /* Header Item */
@@ -97,6 +101,19 @@
 .time
 {
   color:#bfbfbf;
+}
+
+.contact {
+  padding: 21px 10px 12px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  display: inline-block;
+
+  transition: background-color 0.5s ease;
+}
+/* Contact Properties */
+.contact.btn:hover {
+  background-color: whitesmoke;
 }
 
 
@@ -151,10 +168,10 @@
 
 /* Animate Side Information Menu */
 #Messages {
-  -webkit-transition: width 0.15s ease, margin 0.15s ease;
-  -moz-transition: width 0.15s ease, margin 0.15s ease;
-  -o-transition: width 0.15s ease, margin 0.15s ease;
-  transition: width 0.15s ease, margin 0.15s ease;
+  -webkit-transition: width 1s ease, margin 0.15s ease;
+  -moz-transition: width 1s ease, margin 0.15s ease;
+  -o-transition: width 1s ease, margin 0.15s ease;
+  transition: width 1s ease, margin 0.15s ease;
 }
 
 /* Scrollbar Attributes */

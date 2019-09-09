@@ -1,3 +1,4 @@
 export const ChatPanelActionTypes = {
   TOGGLE_USERS_VISIBILTY: 'TOGGLE_USERS_VISIBILTY',
+  SEND_MESSAGE: 'SEND_MESSAGE'
 }

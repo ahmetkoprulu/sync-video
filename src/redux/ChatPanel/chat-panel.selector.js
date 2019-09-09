@@ -6,3 +6,8 @@ export const selectIsUsersVisible = createSelector(
   [selectChatPanel],
   chatPanel => chatPanel.isUsersVisible
 )
+
+export const selectMessages = createSelector(
+  [selectChatPanel],
+  chatPanel => chatPanel.messages
+)

@@ -8,7 +8,6 @@ const UserListItem = ({ username, currentUser }) => (
   <div className={`contact ${username === currentUser ? 'current-user' : '' }`}>
     <div className="media-body">
       <h5 className="media-heading">{ username }</h5>
-      <small className="pull-left time"><i>Owner</i></small>
     </div>
   </div>
 )

@@ -13,6 +13,12 @@ const chatPanelReducer = (currentState=INITIAL_STATE, action) => {
         isUsersVisible: !currentState.isUsersVisible
       }
 
+    case ChatPanelActionTypes.SEND_MESSAGE:
+      return {
+        ...currentState,
+        messages: [...currentState.messages, action.payload]
+      }
+
     default:
       return currentState
   }
